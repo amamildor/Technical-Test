@@ -40,3 +40,4 @@
    - swipe to left / right to change user
    - long press to pause animation
    - tap to navigate between story images
+- Data management is poorly done. My priority was UI and interactions with it so i chose to spend less time on data management 
