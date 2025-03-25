@@ -7,13 +7,26 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		FB8322DA2D915F1100B3A410 /* BeReal-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BeReal-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB8322DA2D915F1100B3A410 /* Technical-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Technical-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FB8322EC2D91619500B3A410 /* Exceptions for "Technical-Test" folder in "Technical-Test" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = FB8322D92D915F1100B3A410 /* Technical-Test */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		FB8322DC2D915F1100B3A410 /* BeReal-Test */ = {
+		FB8322DC2D915F1100B3A410 /* Technical-Test */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "BeReal-Test";
+			exceptions = (
+				FB8322EC2D91619500B3A410 /* Exceptions for "Technical-Test" folder in "Technical-Test" target */,
+			);
+			path = "Technical-Test";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +45,7 @@
 		FB8322D12D915F1100B3A410 = {
 			isa = PBXGroup;
 			children = (
-				FB8322DC2D915F1100B3A410 /* BeReal-Test */,
+				FB8322DC2D915F1100B3A410 /* Technical-Test */,
 				FB8322DB2D915F1100B3A410 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,7 +53,7 @@
 		FB8322DB2D915F1100B3A410 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FB8322DA2D915F1100B3A410 /* BeReal-Test.app */,
+				FB8322DA2D915F1100B3A410 /* Technical-Test.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +61,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FB8322D92D915F1100B3A410 /* BeReal-Test */ = {
+		FB8322D92D915F1100B3A410 /* Technical-Test */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FB8322E82D915F1200B3A410 /* Build configuration list for PBXNativeTarget "BeReal-Test" */;
+			buildConfigurationList = FB8322E82D915F1200B3A410 /* Build configuration list for PBXNativeTarget "Technical-Test" */;
 			buildPhases = (
 				FB8322D62D915F1100B3A410 /* Sources */,
 				FB8322D72D915F1100B3A410 /* Frameworks */,
@@ -61,13 +74,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				FB8322DC2D915F1100B3A410 /* BeReal-Test */,
+				FB8322DC2D915F1100B3A410 /* Technical-Test */,
 			);
-			name = "BeReal-Test";
+			name = "Technical-Test";
 			packageProductDependencies = (
 			);
 			productName = "BeReal-Test";
-			productReference = FB8322DA2D915F1100B3A410 /* BeReal-Test.app */;
+			productReference = FB8322DA2D915F1100B3A410 /* Technical-Test.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -85,7 +98,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FB8322D52D915F1100B3A410 /* Build configuration list for PBXProject "BeReal-Test" */;
+			buildConfigurationList = FB8322D52D915F1100B3A410 /* Build configuration list for PBXProject "Technical-Test" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -99,7 +112,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FB8322D92D915F1100B3A410 /* BeReal-Test */,
+				FB8322D92D915F1100B3A410 /* Technical-Test */,
 			);
 		};
 /* End PBXProject section */
@@ -251,21 +264,26 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BeReal-Test/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Technical-Test/Preview Content\"";
 				DEVELOPMENT_TEAM = Z293P3NC6A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Technical-Test/Info.plist";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "BeReal-test needs access to your library to store your pictures";
+				INFOPLIST_KEY_NSCameraUsageDescription = "BeReal-test uses the camera to take pictures and add it to your stories";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "BeReal-test needs access to your library to store your pictures";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "NEFF.BeReal-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = "NEFF.Technical-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -280,21 +298,26 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BeReal-Test/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Technical-Test/Preview Content\"";
 				DEVELOPMENT_TEAM = Z293P3NC6A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Technical-Test/Info.plist";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "BeReal-test needs access to your library to store your pictures";
+				INFOPLIST_KEY_NSCameraUsageDescription = "BeReal-test uses the camera to take pictures and add it to your stories";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "BeReal-test needs access to your library to store your pictures";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "NEFF.BeReal-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = "NEFF.Technical-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -305,7 +328,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FB8322D52D915F1100B3A410 /* Build configuration list for PBXProject "BeReal-Test" */ = {
+		FB8322D52D915F1100B3A410 /* Build configuration list for PBXProject "Technical-Test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FB8322E62D915F1200B3A410 /* Debug */,
@@ -314,7 +337,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FB8322E82D915F1200B3A410 /* Build configuration list for PBXNativeTarget "BeReal-Test" */ = {
+		FB8322E82D915F1200B3A410 /* Build configuration list for PBXNativeTarget "Technical-Test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FB8322E92D915F1200B3A410 /* Debug */,
