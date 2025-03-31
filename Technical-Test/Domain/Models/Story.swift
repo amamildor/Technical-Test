@@ -7,8 +7,7 @@
 
 import Foundation
 
-struct Story: Identifiable, Equatable {
-    let id = UUID()
+struct Story: Codable, Equatable {
     var hasBeenLiked: Bool
     var hasBeenSeen: Bool
     var storyImages: [String]
