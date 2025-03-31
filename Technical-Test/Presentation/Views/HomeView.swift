@@ -51,12 +51,8 @@ struct HomeView: View {
                             onSelect: { viewModel.selectUser($0) }
                         )
                     )
-                    .onAppear {
-                        Task { [weak viewModel] in
-                            guard let viewModel else { return }
-                            
-                            await viewModel.loadMoreUsersIfNeeded(currentUser: user)
-                        }
+                    .task(id: user.id) {
+                        await viewModel.loadMoreUsersIfNeeded(currentUser: user)
                     }
                     .padding(7)
                 }
