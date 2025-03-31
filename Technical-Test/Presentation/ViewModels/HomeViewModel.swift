@@ -18,23 +18,25 @@ final class HomeViewModel: ObservableObject {
     
     init(repository: UsersRepository) {
         self.repository = repository
-        loadUsers()
+        Task { [weak self] in
+            await self?.loadUsers()
+        }
     }
     
-    func loadUsers() {
-        users += repository.getUsers()
+    func loadUsers() async {
+        await users += repository.getUsers()
         self.currentPage += 1
     }
     
-    func loadMoreUsersIfNeeded(currentUser: User?) {
+    func loadMoreUsersIfNeeded(currentUser: User?) async {
         guard let currentUser else {
-            loadUsers()
+            await loadUsers()
             return
         }
         
         let thresholdIndex = users.index(users.endIndex, offsetBy: -3)
         if users.firstIndex(where: { $0.id == currentUser.id}) == thresholdIndex {
-            loadUsers()
+            await loadUsers()
         }
     }
     

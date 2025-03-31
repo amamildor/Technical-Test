@@ -52,7 +52,11 @@ struct HomeView: View {
                         )
                     )
                     .onAppear {
-                        viewModel.loadMoreUsersIfNeeded(currentUser: user)
+                        Task { [weak viewModel] in
+                            guard let viewModel else { return }
+                            
+                            await viewModel.loadMoreUsersIfNeeded(currentUser: user)
+                        }
                     }
                     .padding(7)
                 }

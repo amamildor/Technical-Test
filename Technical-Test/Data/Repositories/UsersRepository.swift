@@ -8,7 +8,7 @@
 import Foundation
 
 protocol UsersRepository {
-    func getUsers() -> [User]
+    func getUsers() async -> [User]
 }
 
 final class DefaultUsersRepository: UsersRepository {
@@ -18,7 +18,7 @@ final class DefaultUsersRepository: UsersRepository {
         self.fetchUsersUseCase = fetchUsersUseCase
     }
     
-    func getUsers() -> [User] {
+    func getUsers() async -> [User] {
         return fetchUsersUseCase.execute()
     }
 }
