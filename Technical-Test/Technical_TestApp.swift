@@ -12,11 +12,10 @@ struct Technical_TestApp: App {
     var body: some Scene {
         let useCase = DefaultFetchUsersUseCase()
         let repository = DefaultUsersRepository(fetchUsersUseCase: useCase)
-        @StateObject var viewModel = HomeViewModel(repository: repository)
+        let viewModel = HomeViewModel(repository: repository)
         
         WindowGroup {
-            HomeView()
-                .environmentObject(viewModel)
+            HomeView(viewModel: viewModel)
         }
     }
 }

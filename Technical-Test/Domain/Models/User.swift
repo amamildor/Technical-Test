@@ -7,16 +7,9 @@
 
 import Foundation
 
-struct User: Codable, Identifiable, Equatable {
-    let id: String
+struct User: Identifiable, Equatable {
+    let id = UUID()
     let username: String
     let userImage: String
     var story: Story
-    
-    enum CodingKeys: String, CodingKey {
-        case id = "userID"
-        case username
-        case userImage
-        case story
-    }
 }
